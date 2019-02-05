@@ -1,0 +1,255 @@
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #515E66;
+  padding: 1rem;
+}
+
+header img {
+  width: 2.5rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 1rem .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #F1F5EC;
+}
+
+.admin-menu {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin-menu a {
+  margin: 0 .2rem;
+}
+
+.admin-menu a p {
+  margin: 0;
+  padding: .5rem;
+}
+
+.top-menu-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-menu-items li {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex: 1.5;
+}
+
+header li a:nth-child(2):hover,
+.admin-menu a p:hover {
+  background-color: #F1F5EC;
+  border-radius: .5rem;
+  color: black;
+}
+
+.position-menu-title {
+  margin: .8rem;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.top-menu-items span {
+  flex: 4;
+  text-align: right;
+}
+
+.main-header-logo img{
+  margin: 2rem 1rem .5rem 1rem;
+  width: 200px;
+}
+
+/* Cards Section*/
+section {
+  background-color: #D8E0DC;
+  min-height: 1600px;
+  padding: 1rem;
+}
+
+.top-menu-items,
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background-image: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) ), url('/images/food.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 10px 2px gray;
+  margin-top: 1rem;
+  max-width: 23%;
+  min-width: 260px;
+  padding: 0;
+  position: relative;
+
+}
+.card:hover {
+  box-shadow: 0 0 10px 3px #3F4851;
+}
+
+.card-info-content {
+  background-color: #70787C;
+  color: #D2D7D9;
+  margin-top: 5rem;
+  max-width: 100%;
+  padding-top: 1rem;
+}
+
+.card-info-content p {
+  margin: 0 .5rem;
+  padding: .5rem;
+}
+
+.card-image-views, .card-image-views-num {
+  color: white;
+  text-align: right;
+}
+
+.card-image-views {
+  margin: 1rem 1rem .5rem 0;
+}
+
+p.card-image-views-num {
+  font-size: 2rem;
+  margin: 0 1rem 0 0;
+}
+
+p.attachments,
+div .playlist {
+  font-size: .8rem;
+  font-weight: 400;
+  padding: 1rem .5rem 0 .5rem;
+
+}
+p.playlist-name {
+  color: #F1F5EC;
+  font-size: 1.3rem;
+  padding-top: .2rem;
+
+}
+p.attachment-number {
+  color: white;
+  font-size: 2em;
+  padding: 0 .5rem 1rem .5rem;
+}
+
+.card-plus-icon {
+  border-radius: 50%;
+  margin: 1rem;
+  position: absolute;
+  width: 20%;
+}
+
+.card-plus-icon:hover {
+  border: 2px solid lightgray;
+}
+ 
+p.recipient-name {
+  color: #F1F5EC;
+  font-size: 1.2rem;
+  padding-bottom: 0;
+}
+
+p.card-date {
+  font-size: .8rem;
+  padding: .2rem .5rem;
+}
+
+p.card-url {
+  background-color: #89979F;
+  border-radius: 2px;
+  color: lightgray;
+  font-size: .8rem;
+  margin: .5rem 1rem;
+  padding: 15px;
+  word-wrap: break-word;
+}
+
+/*FOR SMALL DEVICES*/
+@media screen and (max-width: 778px) {
+  section {
+    padding: 0 0 2rem 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header img {
+    width: 2rem;
+  }
+
+  header li:hover {
+    background-color: #F1F5EC;
+  }
+  
+  header li:hover a p {
+    color: black;
+  }
+
+  .top-menu-items span {
+    display: none;
+  }
+
+  .admin-menu {
+    border-bottom: 1px solid black;
+    justify-content: center;
+    padding: .3rem 0;
+  }
+
+  .top-menu-items li:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  .top-menu-items li a p {
+    margin: 0;
+  }
+
+  .top-menu-items li {
+    padding: .2rem;
+  }
+
+  .position-menu-title {
+    text-align: center;
+    white-space: normal;
+  }
+ 
+  .top-menu-items li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+}
+
+
+
